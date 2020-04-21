@@ -12,11 +12,6 @@ auth = tweepy.OAuthHandler(CONSUMER_KEY, CONSUMER_SECRET)
 auth.set_access_token(ACCESS_KEY, ACCESS_SECRET)
 api = tweepy.API(auth)
 
-mentions = api.mentions_timeline()
-
-print(mentions)
-
-
 #Every 69 minutes it prints 'nice'
 
 def countdown(n):
